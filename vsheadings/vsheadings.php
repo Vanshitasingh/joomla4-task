@@ -46,7 +46,7 @@ class PlgSystemVSheadings extends CMSPlugin
 
             $this->app->getDocument()->getWebAssetManager()
 			->addInlineScript("
-            var page_title_container = document.querySelector('h1');
+            var page_title_container = document.getElementsByTagName('h1')[0];
             page_title_container.innerHTML= page_title_container.innerHTML+' '+'$heading_text'
             ");
             return;
