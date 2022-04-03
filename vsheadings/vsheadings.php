@@ -39,9 +39,7 @@ class PlgSystemVSheadings extends CMSPlugin
        {
            return;
        }
-        //echo 'compile';
-        //only going to run these in the backend for now
-
+        
 
         $heading_text = $this->params->get('text_input');
         
