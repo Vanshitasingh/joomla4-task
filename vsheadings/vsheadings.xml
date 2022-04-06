@@ -6,13 +6,11 @@
 	<authorEmail>singhvanshita898@gmail.com</authorEmail>
 	<authorUrl>https://github.com/Vanshitasingh</authorUrl>
 	<version>1.0.0</version>
-	<description>A Heading plugin that concatenates your text with all the headings present on your site.</description>
+	<description>A Heading plugin that concatenates your text with the heading of your site.</description>
 	<files>
 		<filename plugin="vsheadings">vsheadings.php</filename>
 	</files>
 	<media folder="media" destination="plg_system_vsheadings">
-		<!--<folder>css</folder>-->
-		<!-- <folder>js</folder>	 -->
 	</media>
 	<languages>
 		<language tag="en-GB">language/en-GB.plg_system_vsheadings.ini</language>
@@ -20,13 +18,14 @@
 	<config>
 		<fields name="params">
           
+		  <!-- input field -->
 			<fieldset name="basic">
 				<field
 					name="text_input"
 					type="text"
 					label="HEADINGS_TEXT_VS"
 					description="HEADINGS_DESC_VS"
-					default="World!"
+					default="Vanshita"
 				/>
 			</fieldset>
           
