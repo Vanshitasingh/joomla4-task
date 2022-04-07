@@ -39,7 +39,7 @@ class PlgSystemVSheadings extends CMSPlugin
 	 *
 	 * @since   1.0
 	 */
-	public function onBeforeCompileHead()
+    public function onBeforeCompileHead()
     {
 
 		
@@ -48,24 +48,22 @@ class PlgSystemVSheadings extends CMSPlugin
         $heading_text = $this->params->get('text_input', 1);
 
             //displaying only in the frontend part
-        if ($app->isClient('administrator'))
-        {
+        if ($app->isClient('administrator')) {
             return;
         }
 
             //adding inline js 
-            $document->addScriptDeclaration("
-                jQuery.noConflict();  
-            jQuery(document).ready(function(){
+            $document->addScriptDeclaration(
+	       "jQuery.noConflict();  
+            	jQuery(document).ready(function(){
                 
                 var heading_text = '$heading_text';
                 var page_heading = jQuery('.page-header').text();
 
                 //concatenating the two variables
                 jQuery('.page-header').html('<h1>'+page_heading+' '+heading_text+'</h1>');
-                }); 
-        
-            ");
+                });"
+	    );
     }
    
 }
