@@ -27,7 +27,7 @@ A headings plugin that concatenates your text with your site's heading.
 ## Expected Output/Behaviour:
 ### 1. Entering the desired text into the input field
 
-Note: Page is beind reloaded in the gif
+Note: Page is being reloaded in the gif
 
 ![Entering Text](https://i.ibb.co/2ZswBLY/part1.gif)
 
@@ -35,7 +35,7 @@ Here, I have enetered my name 'Vanshita' and saved the changes.
 
 ### 2. Opening your joomla site 
 
-Note: Page is beind reloaded in the gif
+Note: Page is being reloaded in the gif
 
 ![Displayed view](https://i.ibb.co/9pshhM3/part2.gif)
 
