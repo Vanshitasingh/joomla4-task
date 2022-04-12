@@ -20,8 +20,8 @@ A headings plugin that concatenates your text with your site's heading.
 
     ├── language
     │   └── en-GB.plg_system_vsheadings.ini
-    └── yvcookies.php
-    └── yvcookies.xml
+    └── vsheadings.php
+    └── vsheadings.xml
 
 
 ## Expected Output/Behaviour:
