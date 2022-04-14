@@ -37,6 +37,6 @@ Here, I have enetered my name 'Vanshita' and saved the changes.
 
 Note: Page is being reloaded in the gif
 
-![Displayed view](https://i.ibb.co/9pshhM3/part2.gif)
+![Displayed view](https://i.ibb.co/8shtM31/Hnet-image.gif)
 
 After enabling the plugin, your text input will be attached to all the headings present on the site.
