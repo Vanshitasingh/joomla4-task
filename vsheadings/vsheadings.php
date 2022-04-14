@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Factory;
 /**
- * Concatenates text_input with headings
+ * Concatenates text_input with all the headings
  *
  * @since 4.0
  */
@@ -26,7 +26,6 @@ class PlgSystemVSheadings extends CMSPlugin
      *
      * @since 1.0
      */
-   
     public function __construct($name, array $arguments = array())
     {
         // Calling the parent Constructor
@@ -42,28 +41,26 @@ class PlgSystemVSheadings extends CMSPlugin
     public function onBeforeCompileHead()
     {
 
-		
+
         $app = Factory::getApplication();
         $document = Factory::getDocument();
         $heading_text = $this->params->get('text_input', 1);
 
-            //displaying only in the frontend part
+            //displaying only in the backend part
         if ($app->isClient('administrator')) {
+            //adding inline js
+            $document->addScriptDeclaration(
+                "jQuery.noConflict();  
+                jQuery(document).ready(function(){
+            
+                var heading_text = '$heading_text';
+                //concatenating all the headings with input text 
+                jQuery('h1,h2,h3,h4,h5,h6').text((i, txt) => txt +' '+ heading_text);
+                });"
+            );
             return;
         }
-
-            //adding inline js 
-            $document->addScriptDeclaration(
-	       "jQuery.noConflict();  
-            	jQuery(document).ready(function(){
-                
-                var heading_text = '$heading_text';
-                var page_heading = jQuery('.page-header').text();
-
-                //concatenating the two variables
-                jQuery('.page-header').html('<h1>'+page_heading+' '+heading_text+'</h1>');
-                });"
-	    );
+           
     }
    
 }
