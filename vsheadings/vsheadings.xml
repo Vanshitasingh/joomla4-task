@@ -6,7 +6,7 @@
 	<authorEmail>singhvanshita898@gmail.com</authorEmail>
 	<authorUrl>https://github.com/Vanshitasingh</authorUrl>
 	<version>1.0.0</version>
-	<description>A Heading plugin that concatenates your text with the heading of your site.</description>
+	<description>A Heading plugin that concatenates your text with all the heading on your site.</description>
 	<files>
 		<filename plugin="vsheadings">vsheadings.php</filename>
 	</files>
@@ -16,8 +16,7 @@
 		<language tag="en-GB">language/en-GB.plg_system_vsheadings.ini</language>
 	</languages>
 	<config>
-		<fields name="params">
-          
+		<fields name="params"> 
 		  <!-- input field -->
 			<fieldset name="basic">
 				<field
@@ -28,8 +27,6 @@
 					default="Vanshita"
 				/>
 			</fieldset>
-          
 		</fields>
 	</config>
-	
 </extension>
