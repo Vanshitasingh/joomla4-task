@@ -33,10 +33,10 @@ Note: Page is being reloaded in the gif
 
 Here, I have enetered my name 'Vanshita' and saved the changes.
 
-### 2. Opening your joomla site 
+### 2. Enabling the plugin
 
 Note: Page is being reloaded in the gif
 
 ![Displayed view](https://i.ibb.co/9pshhM3/part2.gif)
 
-After opening the site you will be able to see the concatenation of the two strings.
+After enabling the plugin, your text input will be attached to all the headings present on the site.
